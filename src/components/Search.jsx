@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+const API_KEY = process.env.REACT_APP_API_KEY;
+
 const Search = ({ setWeatherData, setArea, setAirData }) => {
     const [city, setCity] = useState('');
 
@@ -11,7 +13,7 @@ const Search = ({ setWeatherData, setArea, setAirData }) => {
 
         try {
             // Fetch coordinates for the city
-            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d38517746a7a6c4ead7877ec91bc1d0f`);
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`);
             if (!response.ok) {
                 throw new Error('City not found');
             }
@@ -21,12 +23,12 @@ const Search = ({ setWeatherData, setArea, setAirData }) => {
             setArea(cityData.name);
 
             // Fetch detailed weather data using coordinates
-            const weatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&appid=d38517746a7a6c4ead7877ec91bc1d0f`);
+            const weatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`);
             const weatherData = await weatherResponse.json();
             setWeatherData(weatherData);
 
             // Fetch air data using coordinates
-            const airResponse = await fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=d38517746a7a6c4ead7877ec91bc1d0f`);
+            const airResponse = await fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`);
             const airData = await airResponse.json();
             setAirData(airData);
 
