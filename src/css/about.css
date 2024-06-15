@@ -1,0 +1,193 @@
+
+.about_side_1{
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.about_side_1::-webkit-scrollbar{
+    width: 25px;
+}
+.about_side_1::-webkit-scrollbar-thumb{
+    background-color: var(--main-bg);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 5px solid transparent;
+    /* border-right: 5px solid transparent;
+    border-top: 5px solid transparent; */
+}
+.about_side_1::-webkit-scrollbar-thumb:hover{
+    background-color: midnightblue;
+    cursor: pointer;
+}
+.about_side_1::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0.252);
+    border-radius: 10px;
+}
+.about_side_1::-webkit-scrollbar-track:hover{
+    background-color: rgba(255, 255, 255, 0.508);
+    cursor: pointer;
+    padding: 4px;
+}
+
+.about_slider_1{
+    /* overflow: hidden; */
+}
+
+.about_box_2{
+    height: 0%;
+    width: 0%;
+}
+
+.about_box_3{
+    width: 100%;
+    /* border: 3px solid yellow; */
+    padding: 0 5vw 0 2vw;
+}
+
+.about_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.about_img_1{
+    /* height: 50vh; */
+    width: 50vw;
+    margin-bottom: 8vh;
+}
+
+.about_h{
+    font-weight: 100;
+    font-family: 'Sirin Stencil', cursive;
+    font-size: calc(1.2rem + 0.8vw);
+    word-spacing: 6px;
+    letter-spacing: 1px;
+}
+
+
+.about_2, .about_3, .about_4, .about_5, .about_6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12vh;
+}
+
+.about_para_2{
+    width: 55%;
+}
+
+.about_para_2 h1 , .about_para_3, .about_para_4 h2, .about_para_5 h1, .about_para_6 h1{
+    font-size: calc(1.05rem + 0.8vw);
+    font-weight: 100;
+    font-family: 'Sirin Stencil', cursive;
+    word-spacing: 6px;
+    letter-spacing: 1px;
+    margin-bottom: 3vh;
+}
+
+.about_para_2 h2 , .about_para_4 li, .about_para_5 h2, .about_para_6 h2{
+    font-size: calc(0.75rem + 0.8vw);
+    font-weight: 100;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-family: 'Sirin Stencil', cursive;
+}
+
+.about_img_2{
+    height: 40vh;
+    width: 40%;
+}
+
+.about_para_3{
+    width: 50%;
+}
+
+.about_img_3{
+    /* height: 38vh; */
+    width: 44%;
+}
+
+.about_para_4{
+    width: 55%;
+}
+
+.about_img_4{
+    /* height: 40vh; */
+    width: 40%;
+}
+
+.about_para_5 h1{
+    margin-bottom: 1vh;
+}
+ 
+.about_para_5{
+    width: 55%;
+}
+
+.about_img_5{
+    /* height: 40vh; */
+    width: 35%;
+}
+
+.about_para_6{
+    width: 45%;
+}
+
+.about_img_6{
+    /* height: 42vh; */
+    width: 30%;
+    margin-right: 10vw;
+}
+
+
+
+@media (max-width: 1225px){
+    .about_box_3{
+        width: 100%;
+        padding: 0px 5vw;
+    }
+}
+
+@media (max-width: 1100px){
+    .slider_1{
+        overflow: hidden;
+    }
+    .about_side_1{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 950px){
+    .about_side_1::-webkit-scrollbar{
+        width: 15px;
+    }
+    .about_side_1::-webkit-scrollbar-thumb{
+        border: 3px solid transparent;
+    }
+}
+
+@media (max-width: 950px){
+    .about_box_3{
+        margin-top: -15vh;
+    }
+}
+
+@media (max-width: 810px){
+    .about_para_6{
+        width: 55%;
+    }
+}
+
+
+@media (max-width: 700px){
+    .about_img_1{
+        margin-bottom: 4vh;
+    }
+    .about_2, .about_3, .about_4, .about_5, .about_6 {
+        padding-bottom: 6vh;
+    }
+    .about_4{
+        flex-direction: column;
+    }
+}

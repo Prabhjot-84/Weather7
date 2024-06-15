@@ -1,0 +1,671 @@
+@media (max-width: 1225px){
+
+    .container{
+        /* justify-content: unset; */
+    }
+
+    a span{
+        visibility: hidden;
+        pointer-events: none;
+        width: 0;
+        transition: width 0.2s ease-in;
+    }
+    .box_1 .logo_name{
+        display: none;
+    }
+    .menu{
+        margin-top: 20px;
+        position: absolute;
+        top: 10%;
+        width: 24%;
+        pointer-events: none;
+    }
+    .menu a{
+        line-height: 50px;
+    }
+    .menu a i{
+        margin-left: 1.5vw;
+        margin-right: 3vw;
+        font-size: 21px;
+        cursor: pointer;
+        pointer-events: all;
+        padding: 7px;
+        /* border-radius: 50%;
+        background: black;
+        border: 5px double; */
+    }
+    .base:hover + .derived{
+        display: inline-block;
+        visibility: visible;
+        color: black;
+        background: white;
+        /* font-size: 1.05rem; */
+        padding: 0 12px;
+        border-radius: 18px;
+        font-size: 1.2rem;
+        pointer-events: all;
+        /* width: 10vw; */
+        width: 130px;
+        text-align: center;
+        transition: width 0.2s ease-out;
+    }
+    .base:hover{
+        transform: scale(1.1);
+    }
+    .box_1{
+        width: 6.5%;
+        background-color: white;
+    }
+    .box_1 .logo{
+        visibility: hidden;
+    }
+    .grid{
+        display: grid;
+        position: absolute;
+        background: midnightblue;
+        height: 10.5vh;
+        width: 6.5%;
+        top: 0%;
+        left: 0%;
+        place-items: center;
+    }
+    .grid i{
+        color: white;
+        font-size: 28px;
+    }
+    .weather_type{
+        font-size: 1.6vw;
+    }
+
+    /* --------------------------------------------------------------------------------- */
+    /* --------------------------------------------------------------------------------- */
+
+    .slider_1{
+        width: 93%;
+    }
+    .side_1{
+        justify-content: normal;
+    }
+
+
+    .box_2{
+        width: 33%;
+        padding: 0 0 7px 2vw;
+    }
+    .box_2 .logo{
+        display: flex;
+        height: 10.5vh;
+        width: 107%;
+        margin: 0 0 0 -2vw;
+        padding-left: 2vw;
+        justify-content: left;
+        background-color: var(--second-bg);
+        /* border-bottom-right-radius: 20px; */
+    }
+    .logo_name{
+        /* padding-left: 0.7vw;
+        letter-spacing: 1px;
+        font-size: 1.8rem; */
+        display: none;
+    }
+    .part_1{
+        height: 25vh;
+    }
+    .uv_index, .block_4 h2, .block_5 h2, .block_3 h2 {
+        font-size: 19px;
+        font-weight: 500;
+    }
+    .layer_1{
+        height: 8vh;
+        padding-top: 1vh;
+    }
+    .layer_2{
+        height: 9vh;
+    }
+    .part_2{
+        height: 57vh;
+    }
+    .search input{
+        font-size: 15px;
+    }
+    .today{
+        font-size: 15px;
+    }
+    .hourly_icon{
+        width: 40px;
+    }
+    .part_3{
+        height: 8vh;
+    }
+    .humidity, .feels_like{
+        width: 13vw;
+        height: 4vw;
+    }
+    .humidity h3, .feels_like h3{
+        font-size: 1rem;
+    }
+    .update{
+        font-size: 18px;
+    }
+
+    /* --------------------------------------------------------------------------------- */
+    /* --------------------------------------------------------------------------------- */
+
+    .box_3{
+        width: 67%;
+        padding: 0px 15px 10px 15px;
+    }
+    .navigation{
+        padding: 5px 5px 0px 5px;
+        background-color: var(--second-bg);
+        width: 108%;
+        height: 10.5vh;
+        margin-left: -1vw;
+        padding: 0 4vw;
+    }
+    .progress{
+        height: 7.5vw;
+    }
+    .inner{
+        height: 13.5vw;
+        width: 13vw;
+    }
+    .uvi{
+        font-size: 28px;
+    }
+    .back{
+        width: 10.5vw;
+        height: 10.5vw;
+    }
+    .block_6 h2{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .visibility_data h2, .wind_data h2 {
+        font-size: 1.5vw;
+    }
+    .uv_index, .block_4 h2, .block_5 h2, .block_3 h2{
+        font-size: 1.8vw;
+    }
+    .low .high, .day, .night{
+        font-size: 1.5vw;
+    }
+    .aqi_desc{
+        font-size: 15px;
+    }
+    .block_6 h2 img {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1100px){
+    .slider_1{
+        overflow: scroll;
+    }
+    .side_1{
+        height: 130vh;
+    }
+    .navigation{
+        width: 105%;
+    }
+    .part_2{
+        height: 80vh;
+        overflow-y: auto;
+    }
+    .box_2{
+        width: 36%;
+        /* height: 100vh; */
+    }
+    .box_3{
+        width: 64%;
+    }
+    .sunrise_data h3, .sunset_data h3{
+        /* font-size: 20px; */
+    }
+    .sunrise_value, .sunset_value {
+        font-weight: 100;
+        font-size: 16px;
+    }
+    .sunrise img, .sunset img {
+        width: 35px;
+    }
+    .wind_data, .visibility_data{
+        display: flex;
+        align-items: center;
+    }
+    .wind_data h2, .visibility_data h2{
+        font-size: 20px;
+    }
+    .visibility_value, .wind_value {
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .wind img, .visibility img {
+        width: 37px;
+        height: 37px;
+    }
+    .division_1 {
+        /* border: 0.5px solid midnightblue; */
+        height: 90vh;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 25px;
+    }
+    .progress{
+        height: 94px;
+        padding-top: 20px;
+    }
+    .inner{
+        height: 155px;
+        width: 164px;
+    }
+    .back {
+        width: 110px;
+        height: 110px;
+    }
+    .block_6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .block_6 h2{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .block_6 h2 span{
+        font-size: 18px;
+    }
+    .low, .high, .day, .night{
+        font-size: 18px;
+    }
+    .uv_index, .block_4 h2, .block_5 h2, .block_3 h2 {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        word-spacing: 1px;
+    }
+    .division_2{
+        height: 30vh;
+    }
+    .humidity, .feels_like{
+        width: 14vw;
+    }
+}
+
+
+
+
+@media (max-width: 1000px){
+    .city_name{
+        font-size: 24px;
+    }
+    .box_2 {
+        width: 330px;
+    }
+    .time{
+        font-size: 16px;
+    }
+    .temp{
+        font-size: 24px;
+    }
+    .weather_type{
+        font-size: 16px;
+    }
+    .humidity, .feels_like {
+        width: 130px;
+        background-color: rgba(255, 255, 255, 0.65);
+    }
+    .humidity h3, .feels_like h3 {
+        font-size: 15px;
+    }
+    .uv_index img {
+        width: 25px;
+    }
+    .wind img, .visibility img {
+        width: 30px;
+        height: 30px;
+    }
+    .next_days{
+        height: 85%;
+    }
+    .division_2 h2 {
+        font-size: 22px;
+    }
+    
+}
+
+
+
+
+
+
+@media (max-width: 900px){
+    .slider_1{
+        width: 100%;
+    }
+    .box_2 .logo{
+        display: none;
+    }
+    .box_1{
+        position: absolute;
+        height: 10%;
+    }
+    .grid{
+        width: 8%;
+    }
+    .menu{
+        margin-left: 35vw;
+    }
+    .box_2{
+        margin-top: 95px;
+        height: 90%;
+    }
+    .division_1{
+        margin-top: 75px;
+    }
+    .navigation{
+        position: absolute;
+        left: 8.5%;
+        width: 90.5%;
+    }
+}
+
+
+
+
+
+@media (max-width: 900px){
+    .navigation{
+        top: 0%;
+    }
+    .grid i{
+        font-size: 28px;
+    }
+    .grid i:hover{
+        cursor: pointer;
+    }
+    .update{
+        font-size: 18px;
+        height: 7vh;
+    }
+    .side_1{
+        flex-direction: column;
+    }
+    .part_1{
+        width: 40%;
+        height: 27vh;
+    }
+    .part_2{
+        height: 40vh;
+        width: 40%;
+    }
+    .part_3 {
+        width: 40%;
+        left: 8%;
+        position: absolute;
+        top: 75%;
+    }
+    .box_2 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        overflow: initial;
+        flex-wrap: wrap;
+        height: 50vh;
+        justify-content: space-evenly;
+        align-items: initial;
+    }
+    .layer_1{
+        height: 9vh;
+        margin: 0 2.5vw;
+    }
+    .layer_2{
+        height: 9vh;
+        margin: 0 2.5vw;
+    }
+    .temp{
+        font-size: 28px;
+    }
+    .humidity, .feels_like{
+        height: 7vh;
+    }
+    .division_1{
+        margin-top: 20px;
+        height: 64vh;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .box_3{
+        width: 100%;
+    }
+    .sunrise_data h3, .sunset_data h3 {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+
+
+
+    .menu a{
+        overflow: hidden;
+        width: 38vh;
+        margin: 5px 10px;
+        /* margin-top: 5px; */
+        margin-left: -35vw;
+        transition: all 0.3s ease-in;
+    }
+    /* .menu{
+        display: flex;
+        margin-top: 10vh;
+    } */
+
+
+
+    .grid_bg_change{
+        font-size: 35px;
+        padding-left: 2vw;
+        background-color: var(--second-bg);
+    }
+    .show_menu{
+        display: flex;
+        margin-top: 10vh;
+    }
+    .display_options{
+        text-decoration: none;
+        background-color: white;
+        font-size: 1.5vw;
+        z-index: 100;
+        position: relative;
+        color: black;
+        margin: 5px 10px;
+        border-radius: 14px;
+        cursor: pointer;
+        margin: 5px 10px !important;
+        border: 1px solid var(--second-bg);
+        font-family: 'Sirin Stencil', cursive;
+        transition: all 0.4s ease-out;
+    }
+    .display_options:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+        border: none;
+    }
+    .display_options i:hover{
+        cursor: pointer;
+    }
+    .option{
+        display: inline-block;
+        visibility: visible;
+        color: black;
+        pointer-events: all;
+        font-size: 1.4rem;
+        width: 70%;
+        height: 100%;
+        transition: width 0.2s ease-in;
+    }
+    .base:hover + .derived{
+        font-size: 1.4rem;
+        width: 70%;
+        height: 100%;
+        padding: 0px;
+        text-align: start;
+    }
+    .blur_slider{
+        width: 100%;
+        pointer-events: none;
+        filter: blur(1px);
+    }
+
+}
+
+
+
+
+
+@media (max-width: 750px){
+    .part_2{
+        height: 30vh;
+    }
+    .update{
+        font-size: 17px;
+    }
+    .part_1{ 
+        height: 22vh;
+        width: 44%;
+    }
+    .part_3{
+        width: 41%;
+    }
+    .layer_1{
+        height: 8vh;
+    }
+    .layer_2{
+        height: 8vh;
+    }
+    .humidity, .feels_like{
+        height: 5vh;
+    }
+    .sunrise, .sunset{
+        height: 50px;
+    }
+    .division_1{
+        height: 55vh;
+    }
+    .uv_index, .block_4 h2, .block_5 h2, .block_3 h2 {
+        font-size: 19px;
+    }
+    .sunrise_data h3, .sunset_data h3 {
+        font-size: 16px;
+    }
+    .wind_data h2, .visibility_data h2 {
+        font-size: 18px;
+    }
+    .visibility_value, .wind_value {
+        font-size: 18px;
+    }
+    .low, .high, .day, .night {
+        font-size: 15px;
+    }
+    .block_6 h2{
+        font-size: 16px;
+    }
+    .block_6 h2 img {
+        height: 20px;
+        width: 20px;
+    }
+    .block_3 img {
+        width: 20px;
+    }
+    .next_days{
+        width: 82px;
+    }
+    .day_temp{
+        font-size: 14px;
+    }
+    .division_2 h2 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .uvi{
+        font-size: 22px;
+    }
+    .inner{
+        height: 142px;
+        width: 152px;
+    }
+}
+
+
+
+
+
+@media (max-width: 700px){
+    .part_1{
+        width: 50%;
+    }
+    .part_3{
+        width: 44%;
+        position: relative;
+        top: 0%;
+        left: 0%;
+    }
+    .division_1 {
+        height: 80vh;
+        /* padding: 0 5vw 0 8vw; */
+        margin-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .navigation{
+        z-index: 1;
+    }
+    .humidity h3, .feels_like h3 {
+        font-size: 14px;
+    }
+
+    .box_2{
+        align-items: center;
+        flex-direction: column;
+        height: 80vh;
+        padding: 0 20px 0 20px;
+    }
+
+    .part_1{
+        height: 24vh;
+        width: 380px;
+        margin-bottom: 20px;
+    }
+    .part_2{
+        width: 380px;
+        margin-bottom: 20px;
+    }
+    .part_3{
+        width: 350px;
+    }
+}
+
+
+
+@media (max-width: 550px){
+    .part_1{
+        width: 340px;
+    }
+    .part_2{
+        width: 340px;
+    }
+    .part_3{
+        width: 325px;
+    }
+    .division_1 {
+        margin-top: 20px;
+    }
+}
